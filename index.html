@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>어디가 아파서 오셨나요?</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+	<style>
+	
+
+		@font-face {
+font-family: '116watermelon';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.0/116watermelon.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: '116angmuburi';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.0/116angmuburi.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+		section, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #FFF8F0;
+}
+
+.wrap {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.skull {
+  position: relative;
+}
+
+.skull img {
+  position: absolute;
+  top: 100px;
+  left: 230px;
+  z-index: 1;
+}
+
+.skull-line {
+  z-index: 2;
+  width: 500px;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.skull:hover .skull-line {
+  opacity: 1;
+}
+
+.title {
+  height: 1100px;
+}
+
+h1 {
+  color: #036DFF;
+  font-size: 100px;
+  font-family: '116watermelon';
+  letter-spacing: 10px;
+  padding-top: 40px;
+  padding-bottom: 8px;
+}
+
+h2 {
+  font-family: '116angmuburi';
+  font-size: 34pt;
+  color: #036DFF;
+  letter-spacing: 2px;
+}
+
+hr {
+  width: 1500px;
+  border-width: 1.5px;
+  border-color: #036DFF;
+  text-align: center;
+}
+
+.hr-thin {
+  border-width: 1px;
+}
+
+.bt-con {
+  text-align: center;
+  padding: 70px;
+  position: relative;
+}
+
+.bt {
+  position: relative;
+  display: inline-block;
+  padding: 20px 66px;
+  background-color: #FFF8F0;
+  color: #036DFF;
+  text-decoration: none;
+  border-radius: 60px;
+  font-size: 20px;
+  border: 1px solid #036DFF;
+  margin: 0 20px;
+  font-family: 'Noto Sans KR';
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.bt:hover {
+  background-color: #036DFF;
+  color: #FFF8F0;
+}
+
+.bt-img1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.bt-img2 {
+  position: absolute;
+  top: 50%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.bt-img3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.bt:hover .bt-img1 {
+  opacity: 1;
+}
+
+.bt:hover .bt-img2 {
+  opacity: 1;
+}
+
+.bt:hover .bt-img3 {
+  opacity: 1;
+}
+footer {
+  background-color: #036DFF;
+  color: #FFF8F0;
+  padding: 160px;
+  text-align: center;
+
+	</style>
+}
+</head>
+<body>
+	<section class="title">
+		<div class="wrap">
+			<h1>어디가 아파서 <br>오셨나요?</h1>
+
+
+		</div>
+		<hr>
+		<div class="wrap">
+			<h2>~현대인이라 다행이야! 과거 의사들의 기상천외한 치료법~</h2>
+
+		</div>
+		<div class="wrap skull">
+			<img src="skull.png">
+			<img src="skull line.png" class="skull-line">
+		</div>
+	</section>
+	<section>
+		<hr class="hr-thin">
+		<div class="wrap">
+			<h2>증상을 말해주시겠어요?</h2>
+			
+			
+		</div>
+		<hr class="hr-thin">
+		<div class="bt-con">
+  <a href="https://asy224444.github.io/hurt/" class="bt">
+    <span class="bt-text">!피가 난다! <br>칼에 베였어요!</span>
+    <img src="click.png" class="bt-img1">
+  </a>
+  <a href="#" class="bt">
+    <span class="bt-text">지끈지끈, <br>머리가 아파요!</span>
+    <img src="click.png" class="bt-img2">
+  </a>
+  <a href="#" class="bt">
+    <span class="bt-text">어,음... <br>엉덩이가...</span>
+    <img src="click.png" class="bt-img3">
+  </a>
+</div>
+	</section>
+<footer>
+	<p>안서연</p>
+</footer>
+</body>
+</html>
